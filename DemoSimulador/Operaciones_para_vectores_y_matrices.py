@@ -256,4 +256,15 @@ def productoTensorial(A,B):
                     matriz_respuesta[(filasB*x)+i][(columnasB*y)+j] = aux[i][j]
     return matriz_respuesta
 
+def potenciaMatricesComplejas(A, n):
+    '''Retorna la potencia de la matriz elevada al exponente n. Se realiza elevando
+    a la n todos los puntos de la matriz'''
+    B = A[:]
+    if n == 0:
+        return A
+    else:
+        for x in range(n-1):
+            A = productoMatricialComplejo(A,B)
+        return A
 
+                          
