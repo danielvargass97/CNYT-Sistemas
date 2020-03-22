@@ -259,12 +259,13 @@ def productoTensorial(A,B):
 def potenciaMatricesComplejas(A, n):
     '''Retorna la potencia de la matriz elevada al exponente n. Se realiza elevando
     a la n todos los puntos de la matriz'''
-    B = A[:]
+    B = A.copy()
     if n == 0:
         return A
     else:
         for x in range(n-1):
             A = productoMatricialComplejo(A,B)
         return A
+
 
                           

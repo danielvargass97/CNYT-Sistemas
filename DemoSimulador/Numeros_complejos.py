@@ -149,7 +149,7 @@ def producto(c1, c2):
 
     r4 = r4 * (-1)
     
-    return [r3+r4, i3+i4]
+    return [round(r3+r4,2), round(i3+i4,2)]
     
 
 def resta(c1, c2):
